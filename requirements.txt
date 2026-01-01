@@ -1,0 +1,13 @@
+Buttons to start/stop the program
+Maybe a pause?
+Probably IMU outputs 
+     I'm not too sure which ones yet as there are like 18 to pick from
+     Maybe just like roll pitch yaw velocity and x y z acceleration?
+Depth sensor output
+     (not yet implemented, so not sure how that will look 
+     It will be just 1 float output tho 
+     depth from surface
+Modular enough so that it is easy to add more later
+    i can imagine we will have more to add later
+We prob won't be able to test this or use it for a bit 
+    but camera outputs could be cool.

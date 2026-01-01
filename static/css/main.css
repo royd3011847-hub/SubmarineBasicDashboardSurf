@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8fffd5;
+}
+h1 {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 300%;
+}
+.Buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+button {
+    padding: 20px 40px;
+    font-size: 28px;
+    height: 200%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+table {
+    width: 30%;   
+    margin: 10px;
+    padding: 1px;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 2px 6px;
+}
+
+th {
+    background-color: teal;
+    padding: 10px;
+}
+
+td {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.Tables {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.connection-status {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.2rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red; /* default: disconnected */
+    border: 2px solid #333;
+}
+

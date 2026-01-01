@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Surf Shop 3000{% endblock %}
+
+{% block body %}
+    <h1 id="main-header">Surf Control Panel</h1>
+    <!-- Buttons Section-->
+    <div class="Buttons">
+        <div class="button">
+            <button style="background-color: red;" onclick="stopClicked()">Stop</button>
+        </div>
+        <div class="button">
+            <button style="background-color: #7aed15;" onclick="startClicked()">Start</button>
+        </div>
+        <div class="button">
+            <button style="background-color: yellow;" onclick="pauseClicked()">Pause</button>
+        </div>
+    </div>
+
+    <!-- Rotation Section-->
+    <div class="Tables">
+        <table id="rotation-table">
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 40px;">
+            </colgroup>
+            <tr>
+                <th colspan="2">Rotation Data</th>
+            </tr>
+            <tr>
+                <td>roll</td>
+                <td id="roll-value">0</td>
+            </tr>
+            <tr>
+                <td>pitch</td>
+                <td id="pitch-value">0</td>
+            </tr>
+            <tr>
+                <td>yaw</td>
+                <td id="yaw-value">0</td>
+            </tr>
+        </table>
+
+        <table id="acceleration-table">
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 40px;">
+            </colgroup>
+            <tr>
+                <th colspan="2">Acceleration Data</th>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td id="x-value">0</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td id="y-value">0</td>
+            </tr>
+            <tr>
+                <td>z</td>
+                <td id="z-value">0</td>
+            </tr>
+        </table>
+        <table id="depth-table">
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 40px;">
+            </colgroup>
+            <tr>
+                <th colspan="2">Depth</th>
+            </tr>
+            <tr>
+                <td colspan="2" id="depth-value">0</td>
+            </tr>
+            <tr>
+                <th colspan="2">Timer</th>
+            </tr>
+            <tr>
+                <td colspan="2" id="timer-value">00:00:00</td>
+            </tr>
+        </table>
+    </div>
+    <div class="connection-status">
+        <div class="status-item">
+            <span class="status-dot" id="controller-dot"></span>
+            Controller
+        </div>
+
+        <div class="status-item">
+            <span class="status-dot" id="submarine-dot"></span>
+            Submarine
+        </div>
+    </div>
+
+{% endblock %}
